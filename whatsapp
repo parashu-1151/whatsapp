@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ ! -f  "target/whatsapp-standalone.jar" ]
+then
+    mvn clean package
+fi
+
+java -jar target/whatsapp-standalone.jar
